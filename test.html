@@ -1,0 +1,204 @@
+<!-- Include stylesheet -->
+<link href="quill.snow.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+<link rel="stylesheet" href="style.css">
+<!-- Create the editor container -->
+<div class="row">
+  <div class="column left">
+
+	  <div id="editor">
+
+	  </div>
+      <p class = "wc">Word Count: <span id="word-count">0</span></p>
+  </div>
+  <div class="column right">
+  
+  
+	<div class="simple-audio-player" id="simp" data-config='{"shide_top":false,"shide_btm":false,"auto_load":false}'>
+	  <div class="simp-playlist">
+		<ul>
+
+			<li><span class="simp-source" data-src="p/1979 - Remastered 2012.mp3">1979 - Remastered 2012</span><span class="simp-desc">The Smashing Pumpkins</span></li>
+			<li><span class="simp-source" data-src="p/Backwater.mp3">Backwater</span><span class="simp-desc">Meat Puppets</span></li>
+			<li><span class="simp-source" data-src="p/Believe.mp3">Believe</span><span class="simp-desc">The Bravery</span></li>
+			<li><span class="simp-source" data-src="p/Big Me.mp3">Big Me</span><span class="simp-desc">Foo Fighters</span></li>
+			<li><span class="simp-source" data-src="p/Black Hole Sun.mp3">Black Hole Sun</span><span class="simp-desc">Soundgarden</span></li>
+			<li><span class="simp-source" data-src="p/Burden In My Hand.mp3">Burden In My Hand</span><span class="simp-desc">Soundgarden</span></li>
+			<li><span class="simp-source" data-src="p/Chop.mp3">Chop</span><span class="simp-desc">Vundabar</span></li>
+			<li><span class="simp-source" data-src="p/Comfort Eagle.mp3">Comfort Eagle</span><span class="simp-desc">CAKE</span></li>
+			<li><span class="simp-source" data-src="p/Commissioning a Symphony In C.mp3">Commissioning a Symphony In C</span><span class="simp-desc">CAKE</span></li>
+			<li><span class="simp-source" data-src="p/Corduroy - Remastered.mp3">Corduroy - Remastered</span><span class="simp-desc">Pearl Jam</span></li>
+			<li><span class="simp-source" data-src="p/Doctor My Eyes.mp3">Doctor My Eyes</span><span class="simp-desc">Jackson Browne</span></li>
+			<li><span class="simp-source" data-src="p/Don't Bring Me Down.mp3">Don't Bring Me Down</span><span class="simp-desc">Electric Light Orchestra</span></li>
+			<li><span class="simp-source" data-src="p/Everlong.mp3">Everlong</span><span class="simp-desc">Foo Fighters</span></li>
+			<li><span class="simp-source" data-src="p/Float On.mp3">Float On</span><span class="simp-desc">Modest Mouse</span></li>
+			<li><span class="simp-source" data-src="p/Getting Better.mp3">Getting Better</span><span class="simp-desc">The Beatles</span></li>
+			<li><span class="simp-source" data-src="p/Hello, Goodbye - Remastered 2009.mp3">Hello, Goodbye - Remastered 2009</span><span class="simp-desc">The Beatles</span></li>
+			<li><span class="simp-source" data-src="p/High and Dry.mp3">High and Dry</span><span class="simp-desc">Radiohead</span></li>
+			<li><span class="simp-source" data-src="p/I Burn.mp3">I Burn</span><span class="simp-desc">Toadies</span></li>
+			<li><span class="simp-source" data-src="p/I'm Not Through.mp3">I'm Not Through</span><span class="simp-desc">OK Go</span></li>
+			<li><span class="simp-source" data-src="p/Jumper - 1998 Edit.mp3">Jumper - 1998 Edit</span><span class="simp-desc">Third Eye Blind</span></li>
+			<li><span class="simp-source" data-src="p/Learn to Fly.mp3">Learn to Fly</span><span class="simp-desc">Foo Fighters</span></li>
+			<li><span class="simp-source" data-src="p/Let Me Go.mp3">Let Me Go</span><span class="simp-desc">CAKE</span></li>
+			<li><span class="simp-source" data-src="p/Little Bribes.mp3">Little Bribes</span><span class="simp-desc">Death Cab for Cutie</span></li>
+			<li><span class="simp-source" data-src="p/Lucy In The Sky With Diamonds - Remastered 2009.mp3">Lucy In The Sky With Diamonds - Remastered 2009</span><span class="simp-desc">The Beatles</span></li>
+			<li><span class="simp-source" data-src="p/Mexican Hairless.mp3">Mexican Hairless</span><span class="simp-desc">Toadies</span></li>
+			<li><span class="simp-source" data-src="p/Missing the War - Live at Sony Music Studios, New York, NY - June 1997.mp3">Missing the War - Live at Sony Music Studios, New York, NY - June 1997</span><span class="simp-desc">Ben Folds Five</span></li>
+			<li><span class="simp-source" data-src="p/My Old School.mp3">My Old School</span><span class="simp-desc">Steely Dan</span></li>
+			<li><span class="simp-source" data-src="p/Nowhere Man - Remastered 2009.mp3">Nowhere Man - Remastered 2009</span><span class="simp-desc">The Beatles</span></li>
+			<li><span class="simp-source" data-src="p/Perfect Situation.mp3">Perfect Situation</span><span class="simp-desc">Weezer</span></li>
+			<li><span class="simp-source" data-src="p/Roundabout - 2003 Remaster.mp3">Roundabout - 2003 Remaster</span><span class="simp-desc">Yes</span></li>
+			<li><span class="simp-source" data-src="p/Roxanne.mp3">Roxanne</span><span class="simp-desc">The Police</span></li>
+			<li><span class="simp-source" data-src="p/Saint Simon.mp3">Saint Simon</span><span class="simp-desc">The Shins</span></li>
+			<li><span class="simp-source" data-src="p/Say It Ain't So.mp3">Say It Ain't So</span><span class="simp-desc">Weezer</span></li>
+			<li><span class="simp-source" data-src="p/Selfless, Cold and Composed.mp3">Selfless, Cold and Composed</span><span class="simp-desc">Ben Folds Five</span></li>
+			<li><span class="simp-source" data-src="p/Sleeping Lessons.mp3">Sleeping Lessons</span><span class="simp-desc">The Shins</span></li>
+			<li><span class="simp-source" data-src="p/Sleeping With the Television On.mp3">Sleeping With the Television On</span><span class="simp-desc">Billy Joel</span></li>
+			<li><span class="simp-source" data-src="p/Soul Meets Body.mp3">Soul Meets Body</span><span class="simp-desc">Death Cab for Cutie</span></li>
+			<li><span class="simp-source" data-src="p/Spirit In The Sky.mp3">Spirit In The Sky</span><span class="simp-desc">Norman Greenbaum</span></li>
+			<li><span class="simp-source" data-src="p/Stuck on You.mp3">Stuck on You</span><span class="simp-desc">Failure</span></li>
+			<li><span class="simp-source" data-src="p/The Chain - 2004 Remaster.mp3">The Chain - 2004 Remaster</span><span class="simp-desc">Fleetwood Mac</span></li>
+			<li><span class="simp-source" data-src="p/Too Many People - 2012 Remaster.mp3">Too Many People - 2012 Remaster</span><span class="simp-desc">Paul McCartney/Linda McCartney</span></li>
+			<li><span class="simp-source" data-src="p/Trouble.mp3">Trouble</span><span class="simp-desc">Cage The Elephant</span></li>
+			<li><span class="simp-source" data-src="p/Turn On Me.mp3">Turn On Me</span><span class="simp-desc">The Shins</span></li>
+			<li><span class="simp-source" data-src="p/Twilight.mp3">Twilight</span><span class="simp-desc">Electric Light Orchestra</span></li>
+			<li><span class="simp-source" data-src="p/Undone - The Sweater Song.mp3">Undone - The Sweater Song</span><span class="simp-desc">Weezer</span></li>
+			<li><span class="simp-source" data-src="p/Wait - Remastered 2009.mp3">Wait - Remastered 2009</span><span class="simp-desc">The Beatles</span></li>
+			<li><span class="simp-source" data-src="p/Waiting On A War.mp3">Waiting On A War</span><span class="simp-desc">Foo Fighters</span></li>
+			<li><span class="simp-source" data-src="p/Whatever Gets You Thru The Night - Remastered 2010.mp3">Whatever Gets You Thru The Night - Remastered 2010</span><span class="simp-desc">John Lennon</span></li>
+			<li><span class="simp-source" data-src="p/Wheels.mp3">Wheels</span><span class="simp-desc">CAKE</span></li>
+
+
+		</ul>
+	  </div>
+	</div>    
+  
+  </div>
+</div>
+<div class="row">
+	<button id="importButton">Import HTML</button>
+	<input type="file" id="fileInput" style="display: none;">
+	<button id="download-button">Export HTML</button>
+
+
+</div>	
+
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+<!-- Initialize Quill editor -->
+<script>
+var quill = new Quill('#editor', {
+  theme: 'snow',
+});
+  
+// Save content to localStorage whenever there's a change
+quill.on('text-change', function() {
+  var content = quill.root.innerHTML;
+  localStorage.setItem('quillContent', content);
+});
+
+// Retrieve content from localStorage and set it in the editor
+var savedContent = localStorage.getItem('quillContent');
+if (savedContent) {
+  quill.root.innerHTML = savedContent;
+}
+
+
+
+  document.getElementById('download-button').addEventListener('click', function () {
+    var editorContent = quill.root.innerHTML; // Get the editor content as HTML
+
+    // Create a Blob with the content and set it as a downloadable link
+    var blob = new Blob([editorContent], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+
+    // Create a temporary anchor element and trigger the download
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'editor_content.html';
+    document.body.appendChild(a);
+    a.click();
+
+    // Clean up by removing the temporary anchor
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+
+// Access the content of the Quill editor
+var editor = document.querySelector('#editor .ql-editor');
+
+function updateWordCount() {
+  var text = editor.textContent || editor.innerText;
+  var words = text.trim().split(/\s+/).filter(Boolean);
+  var wordCount = words.length;
+  
+  document.querySelector('#word-count').textContent = wordCount;
+}
+
+
+quill.on('text-change', function(delta, oldDelta, source) {
+  if (source === 'user') {
+    updateWordCount();
+  }
+});
+
+
+updateWordCount();
+
+// Get references to the button and file input
+var importButton = document.getElementById('importButton');
+var fileInput = document.getElementById('fileInput');
+
+// Add event listener to the button to trigger the file input
+importButton.addEventListener('click', function() {
+  fileInput.click();
+});
+
+// Add event listener to the file input to handle selected files
+fileInput.addEventListener('change', function(event) {
+  var file = event.target.files[0];
+  
+  if (file) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var importedHtml = e.target.result;
+      quill.clipboard.dangerouslyPasteHTML(importedHtml);
+    };
+    reader.readAsText(file);
+  }
+});
+
+</script>
+<script  src="script.js"></script>
+<style>
+body {
+	background-image: url("bg.jpg");
+	background-attachment: fixed;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 80%;
+}
+
+.right {
+  width: 20%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ql-editor {
+  font-family: "Indie Flower", Sans Serif;
+  font-size: 20px;
+}
+</style>
